@@ -12,9 +12,9 @@ The wander behavior was a way to add random movements to the game. The code used
 
 The follow AI behavior challenges the player, when this behavior sees the target it suddenly chases it. A NavMeshAgent was used for the follow AI, the enemy needed to be aware of its surrounding know where the obstacles so that the agent would walk through the obstacles, instead, the agent will go around the obstacle to get the player. The player was set as the target to make it difficult for the player to score. 
 
-In the scene there two following agents one attacks the ball and the other attacks the player, the other two opponents wander. The player's team mate all wander (they don't have a target) to give the player full control.
+In the scene there is one following agent that chases the player, the other agents wander. The player's team mate all wander (they don't have a target) to give the player full control and some space to manoeuvre.
 
-My video Link: https://www.youtube.com/watch?v=nXw_i8mKPRk
+My video link: https://www.youtube.com/watch?v=nXw_i8mKPRk
 
 References: 
 
