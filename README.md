@@ -10,7 +10,7 @@ There are wandering agents in the game, I found out that sometimes game characte
 
 The wander behavior was a way to add random movements to the game. The code used for the wandering behavior applies random movements to the characters. It begins with the applying the character's current direction vector and updates it every frame, any inference with that vector will change the current route. Gizmos were drawn on the wandering characters for detection to sense its surrounding knowing when to change direction. [2]
 
-The follow AI behavior challenges the player, when this behavior sees the target it suddenly chases it. A NavMeshAgent was used for the follow AI, the enemy needed to be aware of its surrounding know where the obstacles so that the agent would walk through the obstacles, instead, the agent will go around the obstacle to get the player. The player was set as the target to make it difficult for the player to score. 
+The follow AI behavior challenges the player, when this behavior sees the target it suddenly chases it. The agent and the environment needed to be baked so that the agent is aware of its surrounding so that the agent can avoid obstacle instead of ensuring that the agent go through obstacles. The player was set as the target to make it difficult for the player to score. 
 
 In the scene there is one following agent that chases the player, the other agents wander. The player's team mate all wander (they don't have a target) to give the player full control and some space to manoeuvre.
 
